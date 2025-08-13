@@ -66,7 +66,7 @@ resource "google_composer_environment" "oracle-hfm-composer" {
     software_config {
       airflow_config_overrides = {
         email-email_backend = "airflow.utils.email.send_email_smtp"
-        email-email_from = "skalra@libertyglobal.com"
+        email-email_from = "####"
         email-email_conn_id = "outlook_smtp"
         secrets-backend = "airflow.providers.google.cloud.secrets.secret_manager.CloudSecretManagerBackend"      
       }
